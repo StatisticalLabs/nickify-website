@@ -5,4 +5,18 @@ const withNextra = nextra({
   themeConfig: "./theme.config.tsx",
 });
 
-export default withNextra();
+export default withNextra({
+  redirects: async () => [
+    {
+      source: "/discord",
+      destination: "https://discord.gg/MEF8q6MwTc",
+      permanent: false,
+    },
+    {
+      source: "/invite",
+      destination:
+        "https://discord.com/api/oauth2/authorize?client_id=1055073180970127370&permissions=134236160&scope=bot%20applications.commands",
+      permanent: false,
+    },
+  ],
+});
