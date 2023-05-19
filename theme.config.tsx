@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { DocsThemeConfig } from "nextra-theme-docs";
+import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import React from "react";
 import Footer from "./components/footer";
 
@@ -47,6 +47,35 @@ const config: DocsThemeConfig = {
     text: <Footer />,
   },
   primaryHue: 0,
+  useNextSeoProps: () => ({ titleTemplate }),
+  head: () => {
+    const { title } = useConfig();
+    const description =
+      "Add your YouTube subscriber count to your Discord nickname.";
+    const domain = "nickify.vercel.app";
+    const url = ("https://" + domain) as `https://${typeof domain}`;
+
+    return (
+      <>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content={titleTemplate.replace("%s", title)} />
+        <meta name="description" content={description} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:title"
+          content={titleTemplate.replace("%s", title)}
+        />
+        <meta name="twitter:site:domain" content={domain} />
+        <meta name="twitter:url" content={url} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:description" content={description} />
+        <meta name="theme-color" content="#ffffff" />
+      </>
+    );
+  },
 };
 
 export default config;
