@@ -11,8 +11,8 @@ const config: DocsThemeConfig = {
       <Image
         src="/logo.png"
         alt="Nickify Logo"
-        width={45}
-        height={45}
+        width={42}
+        height={42}
         className="rounded-full"
       />
     </>
@@ -46,7 +46,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: <Footer />,
   },
-  primaryHue: 0,
+  primaryHue: 347,
   useNextSeoProps: () => ({ titleTemplate }),
   head: () => {
     const { title } = useConfig();
