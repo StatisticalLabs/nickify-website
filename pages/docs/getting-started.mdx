@@ -1,0 +1,82 @@
+# Getting started
+
+import { Callout } from "nextra-theme-docs";
+
+<Callout type="error" emoji="️🚫">
+  As of right now, server owners can't use Nickify due to permission issues. We
+  can't do anything about this. Sorry.
+</Callout>
+
+If you want a video tutorial, you can watch this video from [JipStats](https://youtube.com/@JipStats)!
+
+<iframe
+  id="player"
+  type="text/html"
+  width="640"
+  height="360"
+  src="http://www.youtube.com/embed/E0Z0ybygN3U?enablejsapi=1&origin=https://nickify.vercel.app"
+  frameborder="0"
+  class="mt-1"
+/>
+
+Otherwise, keep scrolling.
+
+import { Steps } from 'nextra-theme-docs'
+ 
+<Steps>
+
+### Add Nickify to your server
+
+import Image from "next/image";
+
+This step is only for admins who have `Manage Guild` and don't already have Nickify in their server.
+
+Go to [this link](/invite) in your browser. You should see a page like this:
+
+<Image
+  src="/docs/invite_example.png"
+  alt="Invite Example"
+  width={400}
+  height={545}
+/>
+
+Select your server with the dropdown. Then click `Continue`.
+
+You should then see a page like this:
+
+<Image
+  src="/docs/authorize_example.png"
+  alt="Authorize Example"
+  width={400}
+  height={582}
+/>
+
+Click `Authorize`. You should then see a confirmation page like this:
+
+<Image
+  src="/docs/authorized_example.png"
+  alt="Authorized Example"
+  width={400}
+  height={545}
+/>
+
+This means you've added Nickify to your server. Great job!
+
+### Use the command
+
+To setup Nickify, you can run `/set channel`. Search for your channel, or input your channel's ID or handle.
+
+### Done!
+
+You should then see a message like this:
+
+<Image
+  src="/docs/successful_setup_example.png"
+  alt="Successful Setup Example"
+  width={400}
+  height={185}
+/>
+
+This means you've set it up correctly. Congratulations!
+
+</Steps>
