@@ -7,7 +7,7 @@ export default function Landing() {
     <div className="mx-auto w-full max-w-[90rem] px-6 py-8">
       <div className="flex flex-col items-center gap-3 text-center">
         <BalancerProvider>
-          <Balancer as="h1" className="text-5xl font-bold">
+          <Balancer as="h1" className="text-4xl font-bold xs:text-5xl">
             Subscriber counts. Nicknames. Why not{" "}
             <span className="inline-block bg-gradient-to-b from-red-500 to-red-600 bg-clip-text font-black text-transparent">
               both
