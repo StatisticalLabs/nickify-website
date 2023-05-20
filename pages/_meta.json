@@ -17,5 +17,11 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "statistical": {
+    "title": "Statistical ↗",
+    "type": "page",
+    "href": "https://statistical.vercel.app",
+    "newWindow": true
   }
 }
