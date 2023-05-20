@@ -69,9 +69,17 @@ const config: DocsThemeConfig = {
         />
         <meta name="twitter:site:domain" content={domain} />
         <meta name="twitter:url" content={url} />
+        <meta
+          property="twitter:image"
+          content="https://nickify.vercel.app/og.jpg"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
         <meta property="og:description" content={description} />
+        <meta
+          property="og:image:url"
+          content="https://nickify.vercel.app/og.jpg"
+        />
         <meta name="theme-color" content="#fa0105" />
       </>
     );
