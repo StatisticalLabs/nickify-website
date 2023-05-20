@@ -46,7 +46,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: <Footer />,
   },
-  primaryHue: 347,
+  primaryHue: 0,
   useNextSeoProps: () => ({ titleTemplate }),
   head: () => {
     const { title } = useConfig();
