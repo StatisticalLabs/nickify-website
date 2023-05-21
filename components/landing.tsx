@@ -19,18 +19,20 @@ export default function Landing() {
             nickname.
           </Balancer>
         </BalancerProvider>
-        <Link
-          href="/docs"
-          className="group relative mt-1 rounded-lg bg-blue-600 px-3 py-1.5 text-white dark:text-inherit"
-        >
-          <span className="absolute -inset-0.5 bg-blue-600 opacity-75 blur-md transition-all group-hover:opacity-100" />
-          <span className="relative">
-            Get started{" "}
-            <span className="inline-block transition-all group-hover:translate-x-1">
-              →
-            </span>
-          </span>
-        </Link>
+        <div className="mt-1 flex justify-center gap-2">
+          <Link
+            href="/invite"
+            className="rounded-md bg-blue-600 px-3 py-2 text-white transition-all hover:-translate-y-1 hover:bg-blue-700 dark:text-inherit"
+          >
+            Add Nickify to your server
+          </Link>
+          <Link
+            href="/docs"
+            className="rounded-md bg-black px-3 py-2 text-white transition-all hover:-translate-y-1 hover:bg-neutral-700 dark:bg-white dark:text-black hover:dark:bg-neutral-300"
+          >
+            Learn more{" "}
+          </Link>
+        </div>
         <div className="p-1" />
         <div className="relative mx-auto">
           <span className="absolute -inset-0.5 bg-[#323339] blur-lg" />
