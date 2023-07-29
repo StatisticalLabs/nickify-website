@@ -47,7 +47,7 @@ const navigation: Record<string, { name: string; href: string }[]> = {
   ],
   legal: [
     { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Use", href: "/terms" },
+    { name: "Terms of Service", href: "/terms" },
   ],
 };
 
